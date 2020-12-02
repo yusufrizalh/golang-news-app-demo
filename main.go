@@ -120,7 +120,7 @@ func main() {
 	}
 
 	myClient := &http.Client{Timeout: 10 * time.Second}
-	newsapi := news.NewClient(myClient, apiKey, 20)
+	newsapi := news.NewClient(myClient, apiKey, 5)
 
 	fs := http.FileServer(http.Dir("assets"))
 
