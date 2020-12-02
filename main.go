@@ -18,25 +18,26 @@ import (
 
 var tpl = template.Must(template.ParseFiles("index.html"))
 
-type Search struct {
+// ini adalah Search
+type search struct {
 	Query      string
 	NextPage   int
 	TotalPages int
 	Results    *news.Results
 }
 
-func (s *Search) IsLastPage() bool {
+func (s *search) IsLastPage() bool {
 	return s.NextPage >= s.TotalPages
 }
 
-func (s *Search) CurrentPage() int {
+func (s *search) CurrentPage() int {
 	if s.NextPage == 1 {
 		return s.NextPage
 	}
 	return s.NextPage - 1
 }
 
-func (s *Search) PreviousPage() int {
+func (s *search) PreviousPage() int {
 	return s.CurrentPage() - 1
 }
 
@@ -78,7 +79,7 @@ func searchHandler(newsapi *news.Client) http.HandlerFunc {
 			return
 		}
 
-		search := &Search{
+		search := &search{
 			Query:      searchQuery,
 			NextPage:   nextPage,
 			TotalPages: int(math.Ceil(float64(results.TotalResults / newsapi.PageSize))),
