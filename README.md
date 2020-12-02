@@ -1,27 +1,25 @@
-# News Demo starter files
+# News Demo with Golang 
 
-Starter files for the News application built with Go. Tutorial:
-https://freshman.tech/web-development-with-go/
+Aplikasi sederhana menggunakan Golang untuk melihat daftar berita pada [newsapi.org](https://newsapi.org/)
 
-Here's what the [completed application](https://freshman-news.herokuapp.com/)
-looks like:
+Penampakan hasil akhirnya seperti gambar berikut:
 
-![demo](https://ik.imagekit.io/freshman/news-demo_MrYio9GKlzSi.png)
 
-The code in this repo is meant to be a starting point for anyone following
-along with the tutorial.
+![demo](https://i.ibb.co/mJLmhfd/Screenshot-2.png)
+
 
 ## Prerequisites
 
-You need to have [Go](https://golang.org/dl/) installed on your computer. The
-version used to test the code in the tutorial is **1.15.3**.
+Pertama kali download dan install [Go](https://golang.org/dl/) pada komputer anda.
+Versi yang digunakan pada github ini adalah **1.15.5**. 
+
 
 ## Get started
 
-- Clone or download this repository to your filesystem.
+- Clone atau download repository ini pada sistem komputer anda.
 
 ```bash
-$ git clone https://github.com/Freshman-tech/news-demo-starter-files
+$ git clone https://github.com/yusufrizalh/golang-news-app-demo
 ```
 
-- `cd` into the project directory and follow along with the [tutorial](https://freshman.tech/web-development-with-go/).
+- `cd` kedalam direktori project dan jalankan menggunakan $ go build.
