@@ -22,4 +22,4 @@ Versi yang digunakan pada github ini adalah **1.15.5**.
 $ git clone https://github.com/yusufrizalh/golang-news-app-demo
 ```
 
-- `cd` kedalam direktori project dan jalankan menggunakan ```bash $ go build ```
+- `cd` kedalam direktori project dan jalankan menggunakan ``` $ go build ```
