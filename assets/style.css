@@ -2,21 +2,24 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --light-green: #00ff00;
-  --dark-green: #003b00;
-  --dark-grey: #777;
+  --light-green: #c1ff85;
+  --dark-green: #002200;
+  --dark-grey: #777777;
   --light-grey: #dadce0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -29,8 +32,8 @@ a:hover {
 }
 
 a.button {
-  border: 2px solid #004400;
-  color: var(--dark-green);
+  border: 2px solid var(--dark-green);
+  color: black;
   border-radius: 4px;
   padding: 6px 24px;
   font-size: 14px;
@@ -39,7 +42,7 @@ a.button {
 
 a.button:hover {
   text-decoration: none;
-  background-color: var(--dark-green);
+  background-color:var(--dark-green);
   color: var(--light-green);
 }
 
@@ -58,7 +61,7 @@ header {
 }
 
 .logo {
-  color: #002200;
+  color: var(--dark-green);
 }
 
 form {
@@ -70,8 +73,8 @@ form {
   height: 100%;
   border-radius: 4px;
   border-color: transparent;
-  background-color: var(--dark-green);
-  color: var(--light-green);
+  background-color: white;
+  color: var(--dark-green);
   font-size: 16px;
   line-height: 1.4;
   padding-left: 5px;
@@ -122,12 +125,12 @@ form {
 
 .metadata {
   display: flex;
-  color: var(--dark-green);
+  color:var(--dark-green);
   font-size: 14px;
 }
 
 .published-date::before {
-  content: '\0000a0\002022\0000a0';
+  content: "\0000a0\002022\0000a0";
   margin: 0 3px;
 }
 
@@ -151,7 +154,8 @@ form {
     margin-bottom: 10px;
   }
 
-  form, .search-input {
+  form,
+  .search-input {
     width: 100%;
   }
 
