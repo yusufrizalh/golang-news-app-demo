@@ -1,4 +1,4 @@
-# News Demo with Golang 
+# News App dengan Golang 
 
 Aplikasi sederhana menggunakan Golang untuk melihat daftar berita pada [newsapi.org](https://newsapi.org/)
 
@@ -22,4 +22,4 @@ Versi yang digunakan pada github ini adalah **1.15.5**.
 $ git clone https://github.com/yusufrizalh/golang-news-app-demo
 ```
 
-- `cd` kedalam direktori project dan jalankan menggunakan $ go build.
+- `cd` kedalam direktori project dan jalankan menggunakan ```bash $ go build ```
