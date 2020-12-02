@@ -2,6 +2,8 @@
 
 Aplikasi sederhana menggunakan Golang untuk melihat daftar berita pada [newsapi.org](https://newsapi.org/)
 
+Aplikasi News App dengan GO ini dapat diakses pada [News App](https://news-app-golang.herokuapp.com/)
+
 Penampakan hasil akhirnya seperti gambar berikut:
 
 
